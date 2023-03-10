@@ -1,0 +1,25 @@
+@use './fontsWeights.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  margin-top: 5rem;
+
+  h1 {
+    font-weight: fontsWeights.$title;
+  }
+
+  .description {
+    font-weight: fontsWeights.$description;
+    margin-top: 1rem;
+    background-color: rgb(69, 37, 156);
+    padding: 2rem;
+    width: 30rem;
+    border-radius: 1rem;
+  }
+}

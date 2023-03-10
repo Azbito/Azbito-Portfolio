@@ -2,16 +2,6 @@ import { useRouter } from 'next/router'
 import styles from './navbar.module.scss'
 
 export default function NavBar() {
-  const router = useRouter()
-
-  // function scrollBack() {
-  //   if (router.pathname == "/") {
-  //     scroll.scrollToTop()
-  //   } else {
-  //     router.push('/')
-  //   }
-  // }
-
   return (
     <div className={styles.bar}>
       <strong className={styles.logo}>AZBITO</strong>

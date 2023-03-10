@@ -47,10 +47,14 @@
   }
 }
 
-.azbito {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   margin-top: 5rem;
-  position: absolute;
-  right: 5rem;
+}
+
+.azbito {
   text-align: start;
   background-color: rgb(92, 66, 163);
   padding: 2rem;
@@ -68,8 +72,13 @@
 }
 
 .picture {
-  margin: 4rem 0 0 10rem;
   height: auto;
   width: 14rem;
   border-radius: 20rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
