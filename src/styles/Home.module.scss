@@ -1,0 +1,75 @@
+@use './colors';
+@use './fontsWeights';
+@use './banner';
+@use './button';
+
+// Styles
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .banner {
+    background-image: banner.$image;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: banner.$position-y;
+    width: 100%;
+    height: banner.$height;
+  }
+
+  .welcome {
+    color: colors.$title;
+    font-weight: fontsWeights.$title;
+    font-size: 3rem;
+    margin: 15rem 0 0 6rem;
+  }
+
+  button {
+    border: 0.2rem button.$border-and-title-color solid;
+    outline: none;
+    background-color: transparent;
+    overflow: hidden;
+    color: button.$border-and-title-color;
+    padding: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin: 4rem 0 0 6rem;
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  button:active {
+    background-color: button.$active;
+  }
+}
+
+.azbito {
+  margin-top: 5rem;
+  position: absolute;
+  right: 5rem;
+  text-align: start;
+  background-color: rgb(92, 66, 163);
+  padding: 2rem;
+  border-radius: 0.5rem;
+
+  .title {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    width: 40rem;
+  }
+}
+
+.picture {
+  margin: 4rem 0 0 10rem;
+  height: auto;
+  width: 14rem;
+  border-radius: 20rem;
+}
