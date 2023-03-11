@@ -6,7 +6,6 @@ export default function Repositories() {
       <div className={styles.content}>
         <h1>Repositories</h1>
         <div className={styles.thumbnails}>
-
         </div>
       </div>
     </div>
