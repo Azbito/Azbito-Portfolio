@@ -30,8 +30,8 @@ export default function NavBar() {
     <div className={isBlur ? styles.bar : styles.blur}>
       <strong className={styles.logo} onClick={scrollBack}>AZBITO</strong>
       <div className={styles.items}>
-        <p className={styles.pages}>Home</p>
-        <p className={styles.pages}>About</p>
+        <p className={styles.pages} onClick={scrollBack}>Home</p>
+        <p className={styles.pages} onClick={() => router.push('/bio')}>About</p>
         <p className={styles.pages}>Contact</p>
       </div>
     </div>
