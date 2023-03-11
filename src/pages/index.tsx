@@ -27,9 +27,9 @@ export default function Home() {
       </div>
       <Divider />
       <div className={styles.cards}>
-        <Card iconSizeX={80} iconSizeY={80} image='images/code.svg' alt='Codes' title='My Repositories' description='Getting curious about what I made so far? Check it out!' buttonTitle='Go to my repositories' />
-        <Card iconSizeX={80} iconSizeY={80} image='images/chat.svg' alt='Chat' title='How may I help you?' description='Contact me for professional purpose' buttonTitle="Contacts" />
-        <Card iconSizeX={80} iconSizeY={80} image='images/pixel.svg' alt='Pixelart' title='My Pixel Frames' description='Getting curious about what I made so far? Check it out!' buttonTitle='Go to my repositories' />
+        <Card iconSizeX={80} iconSizeY={80} image='images/code.svg' alt='Codes' title='My Repositories' description='Getting curious about what I made so far? Check it out!' buttonProps={{ title: "Repositories", onClick: () => router.push('/repositories') }} />
+        <Card iconSizeX={80} iconSizeY={80} image='images/chat.svg' alt='Chat' title='How may I help you?' description='Contact me for professional purpose' buttonProps={{ title: "Contacts", onClick: () => router.push('/contacts') }} />
+        <Card iconSizeX={80} iconSizeY={80} image='images/pixel.svg' alt='Pixelart' title='My Pixel Frames' description='Getting curious about what I made so far? Check it out!' buttonProps={{ title: "Pixel Frames", onClick: () => router.push('/gallery') }} />
       </div>
     </div>
   )

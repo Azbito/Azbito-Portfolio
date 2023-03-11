@@ -1,0 +1,14 @@
+@use '../styles/fontsWeights.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  margin-top: 10rem;
+  h1 {
+    font-weight: fontsWeights.$thindescription;
+  }
+}
