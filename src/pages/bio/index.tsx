@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from '../../styles/bio.module.scss'
 
 export default function Bio() {
-  const firstRowTechnologies = [{
+  const technologiesRow = [{
     id: 1,
     image: "images/javascript.svg",
     alt: "Javascript",
@@ -88,7 +88,7 @@ export default function Bio() {
         <h1>Technologies</h1>
 
         <div className={styles.skills}>
-          {firstRowTechnologies.map((item) => (
+          {technologiesRow.map((item) => (
             <div key={item.id}>
               <Image src={item?.image} alt={item?.alt} width={item?.width} height={item?.height} />
             </div>
