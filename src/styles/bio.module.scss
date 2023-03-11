@@ -5,12 +5,18 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .content {
   margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   h1 {
+    margin-top: 2rem;
     font-weight: fontsWeights.$title;
   }
 
@@ -21,5 +27,33 @@
     padding: 2rem;
     width: 30rem;
     border-radius: 1rem;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1rem 1rem 1rem 1rem 1rem 1rem;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
+    padding: 2rem 0 2rem 0;
+    border-radius: 2rem;
+    background-color: rgb(173, 44, 76);
+    width: 35rem;
+  }
+
+  .skillsSecondRow {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .tools {
+    background-color: rgb(255, 94, 0);
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
   }
 }

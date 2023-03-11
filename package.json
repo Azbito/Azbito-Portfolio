@@ -13,11 +13,13 @@
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.11.12",
     "next": "^13.2.4",
+    "react-scroll": "^1.8.9",
     "sass": "^1.58.3"
   },
   "devDependencies": {
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
+    "@types/react-scroll": "^1.8.6",
     "typescript": "4.9.5"
   }
 }
