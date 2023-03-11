@@ -1,3 +1,43 @@
+# About
+This is my portfolio to detail my skills in the development brench and the pixelart one.
+
+# Screenshots
+
+![1](https://user-images.githubusercontent.com/101950809/224459133-7c05e45a-3995-4304-94e6-2abafefd4727.png)
+<br />
+<br />
+<br />
+![2](https://user-images.githubusercontent.com/101950809/224459155-2b5a5cb7-0059-4167-abdc-e647a21f52eb.png)
+<br />
+<br />
+<br />
+![3](https://user-images.githubusercontent.com/101950809/224459214-f360cf42-6503-4a45-afa2-961c7ac20c71.png)
+<br />
+<br />
+<br />
+![4](https://user-images.githubusercontent.com/101950809/224459307-88d2a7c3-7d7b-4a41-82c9-d09b68499364.png)
+<br />
+<br />
+<br />
+![5](https://user-images.githubusercontent.com/101950809/224459318-2a60f771-06bc-470c-aef2-35a5e0ba8863.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
