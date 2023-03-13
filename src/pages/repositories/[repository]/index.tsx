@@ -19,7 +19,7 @@ export default function Repository({ data }: RepoProps) {
     <div className={styles.container}>
       <div className={styles.content}>
         <h1>{data.title}</h1>
-        {router.pathname == 'https://github.com/marcosdanielr' ?
+        {repository == "league_habilities" ?
           <p>{data.infos?.description.substring(0, 94)} <strong onClick={() => router.push(`${data.infos?.descriptionLink}`)}>{data.infos?.description.substring(94, 106)}</strong>{data.infos?.description.substring(106, data.infos?.description.length)}</p>
           :
           <p>{data.infos?.description}</p>
