@@ -13,7 +13,7 @@
     background-image: banner.$image;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: banner.$position-y;
+    background-position-y: 100%;
     width: 100%;
     height: banner.$height;
   }
@@ -21,7 +21,7 @@
   .welcome {
     font-weight: fontsWeights.$title;
     font-size: 3rem;
-    margin: 15rem 0 0 6rem;
+    margin: 15rem 40rem 0 0;
   }
 
   button {
@@ -33,7 +33,7 @@
     padding: 1rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    margin: 4rem 0 0 6rem;
+    margin: 4rem 60rem 0 0;
     backdrop-filter: blur(1rem);
     box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.5);
     cursor: pointer;
@@ -47,44 +47,20 @@
 
 @media (max-width: 856px) {
   .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     .banner {
-      background-image: banner.$image;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-y: banner.$position-y;
-      justify-content: center;
       width: 60rem;
+      background-position-x: 5rem;
       height: banner.$height;
-      // background-position: center center;
-      // position: relative;
-      // left: 7rem;
-      // top: 0;
     }
 
     .welcome {
       width: 40rem;
       font-size: 2rem;
-      margin: 17rem 0 0 15rem;
+      margin-left: 12rem;
     }
 
     button {
-      border: 0.2rem button.$border-and-title-color solid;
-      outline: none;
-      background-color: transparent;
-      overflow: hidden;
-      color: button.$border-and-title-color;
-      padding: 1rem;
-      font-weight: 600;
-      letter-spacing: 0.1rem;
-      margin: 2rem 0 0 6rem;
-      backdrop-filter: blur(1rem);
-      box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.5);
-      cursor: pointer;
-      transition: 0.5s;
+      margin: 2rem 0 0 -2rem;
     }
 
     button:active {
@@ -93,44 +69,41 @@
   }
 
   .container {
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    left: 9rem;
   }
 
   .azbito {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    text-align: start;
-    background-color: rgb(92, 66, 163);
-    padding: 2rem;
-    border-radius: 0.5rem;
-
     .title {
-      margin-bottom: 0.5rem;
-      font-size: 3rem;
+      text-align: center;
+      word-break: break-all;
     }
-
     .description {
-      font-size: 1.2rem;
-      width: 40rem;
+      max-width: 100%;
+      word-break: break-all;
+      text-align: center;
     }
   }
 
   .picture {
-    height: auto;
-    width: 14rem;
-    border-radius: 20rem;
   }
-
   .cards {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
-    margin-bottom: 6rem;
+    position: relative;
+    left: 9rem;
   }
 }
 

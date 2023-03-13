@@ -9,3 +9,10 @@
     transparent
   );
 }
+
+@media (max-width: 856px) {
+  .divider {
+    margin-left: 18rem;
+    height: 3px;
+  }
+}

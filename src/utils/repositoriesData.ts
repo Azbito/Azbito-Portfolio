@@ -149,7 +149,7 @@ const repositoriesData: RepositoryProps[] = [
     alt: 'Find Me',
     path: 'find_me',
     infos: {
-      description: 'Clima Hoje is a API REST study',
+      description: 'Clima Hoje is an API REST study',
       screenshotsTitle: 'Screenshots',
       screenshots: [
         {

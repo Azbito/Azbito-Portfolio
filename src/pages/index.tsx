@@ -10,7 +10,7 @@ export default function Home() {
   const router = useRouter()
 
   return (
-    <div>
+    <center>
       <div className={styles.content}>
         <div className={styles.banner}>
           <Grow in={true}>
@@ -32,6 +32,6 @@ export default function Home() {
         <Card iconSizeX={80} iconSizeY={80} image='images/chat.svg' alt='Chat' title='How may I help you?' description='Contact me for professional purpose' buttonProps={{ title: "Contacts", onClick: () => router.push('/contacts') }} />
         <Card iconSizeX={80} iconSizeY={80} image='images/pixel.svg' alt='Pixelart' title='My Pixel Frames' description='Getting curious about what I made so far? Check it out!' buttonProps={{ title: "Pixel Frames", onClick: () => router.push('/gallery') }} />
       </div>
-    </div>
+    </center>
   )
 }
