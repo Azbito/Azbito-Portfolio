@@ -66,7 +66,7 @@ const sprites = [
   },
   {
     id: 14,
-    image: 'images/cientist.png',
+    image: 'images/Cientist.png',
     alt: 'Cientist'
   },
   {
