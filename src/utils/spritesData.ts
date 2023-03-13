@@ -96,7 +96,7 @@ const sprites = [
   },
   {
     id: 20,
-    image: 'images/worker.png',
+    image: 'images/Worker.png',
     alt: 'Worker'
   },
   {
