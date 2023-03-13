@@ -1,13 +1,11 @@
 import { RepositoryProps } from '@/@types/repositoryProps'
+import repositoriesData from '@/utils/repositoriesData'
 import axios from 'axios'
 import { useRouter } from 'next/router'
 import styles from '../../styles/repositories.module.scss'
 
-type RepositoriesProps = {
-  data: RepositoryProps[]
-}
 
-export default function Repositories({ data }: RepositoriesProps) {
+export default function Repositories() {
   const router = useRouter()
 
 
@@ -16,7 +14,7 @@ export default function Repositories({ data }: RepositoriesProps) {
       <div className={styles.content}>
         <h1>Repositories</h1>
         <div className={styles.repositories}>
-          {data.map((item: RepositoryProps) => (
+          {repositoriesData.map((item: RepositoryProps) => (
             <div className={styles.thumbnails}>
               <img onClick={() => router.push(`repositories/${item.path}`)} src={item?.image} alt={item?.alt} />
               <strong>{item?.title}</strong>
@@ -27,21 +25,4 @@ export default function Repositories({ data }: RepositoriesProps) {
       </div>
     </div>
   )
-}
-
-export async function getServerSideProps() {
-  try {
-    const { data } = await axios.get('api/repositories')
-    return {
-      props: {
-        data
-      }
-    }
-  } catch (error) {
-    return {
-      props: {
-        data: null
-      }
-    }
-  }
 }
