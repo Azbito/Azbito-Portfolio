@@ -1,0 +1,46 @@
+@use '../styles/fontsWeights.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content {
+  margin-top: 5rem;
+  text-align: center;
+
+  p {
+    margin-top: 2rem;
+    width: 40rem;
+  }
+
+  strong {
+    color: rgb(218, 96, 112);
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      color: rgb(231, 141, 141);
+    }
+
+    &:active {
+      color: rgb(255, 175, 185);
+    }
+  }
+}
+.screenshotstitle {
+  font-weight: fontsWeights.$thindescription;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.carousel {
+  max-width: 50rem;
+}
+
+.carouselFindMeMobile {
+  max-width: 20rem;
+}

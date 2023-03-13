@@ -4,11 +4,51 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .content {
   margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   h1 {
     font-weight: fontsWeights.$thindescription;
+    margin-bottom: 3rem;
+  }
+}
+
+.repositories {
+  display: grid;
+  grid-template-columns: 25rem 25rem 25rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.thumbnails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  img {
+    max-width: 25rem;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.15);
+      z-index: 1;
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  strong {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
