@@ -31,7 +31,7 @@ export default function Repositories({ data }: RepositoriesProps) {
 
 export async function getServerSideProps() {
   try {
-    const { data } = await axios.get('https://azbito.vercel.app/repositories/api/repositories')
+    const { data } = await axios.get('api/repositories')
     return {
       props: {
         data
