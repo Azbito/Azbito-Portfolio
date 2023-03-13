@@ -368,22 +368,42 @@ const repositoriesData: RepositoryProps[] = [
     alt: "Atelier de L'Univers",
     path: 'atelier_de_l_univers',
     infos: {
-      description: 'This is a website with an artistic characteristic',
+      description: 'This is a website with an artistic characteristic.',
       screenshotsTitle: 'Screenshots',
       screenshots: [
         {
           id: 1,
-          image: '/images/fmm1.png',
+          image: '/images/atd1.png',
           alt: 'screenshot'
         },
         {
           id: 2,
-          image: '/images/fmm2.png',
+          image: '/images/atd2.png',
           alt: 'screenshot'
         },
         {
           id: 3,
-          image: '/images/fmm3.png',
+          image: '/images/atd3.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 4,
+          image: '/images/atd4.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 5,
+          image: '/images/atd5.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 6,
+          image: '/images/atd6.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 7,
+          image: '/images/atd7.png',
           alt: 'screenshot'
         }
       ]
