@@ -10,18 +10,22 @@ export default function Home() {
   const router = useRouter()
 
   return (
-    <center>
+    <div>
       <div className={styles.content}>
         <div className={styles.banner}>
-          <Grow in={true}>
-            <p className={styles.welcome}>Welcome to my portfolio!</p>
-          </Grow>
-          <button onClick={() => router.push('/bio')}>GO TO MY BIOGRAPHY</button>
+          <div className={styles.welcome}>
+            <Grow in={true}>
+              <p>Welcome to my portfolio!</p>
+            </Grow>
+            <button onClick={() => router.push('/bio')}>GO TO MY BIOGRAPHY</button>
+          </div>
         </div>
       </div>
       <div className={styles.container}>
         <Image className={styles.picture} src="/images/photo.jpg" alt="Me" width={500} height={500} />
-        <div className={styles.azbito}>
+        {/* <h1>Summary</h1>
+        <p>Ahoy! My name is Thiago and also my nickname is Azbito. I'm a Brazilian front-end developer and pixelartist. I'm always looking forward to improvement.</p> */}
+        <div className={styles.summary}>
           <h1 className={styles.title}>Summary</h1>
           <p className={styles.description}>Ahoy! My name is Thiago and also my nickname is Azbito. I'm a Brazilian front-end developer and pixelartist. I'm always looking forward to improvement.</p>
         </div>
@@ -32,6 +36,6 @@ export default function Home() {
         <Card iconSizeX={80} iconSizeY={80} image='images/chat.svg' alt='Chat' title='How may I help you?' description='Contact me for professional purpose' buttonProps={{ title: "Contacts", onClick: () => router.push('/contacts') }} />
         <Card iconSizeX={80} iconSizeY={80} image='images/pixel.svg' alt='Pixelart' title='My Pixel Frames' description='Getting curious about what I made so far? Check it out!' buttonProps={{ title: "Pixel Frames", onClick: () => router.push('/gallery') }} />
       </div>
-    </center>
+    </div>
   )
 }

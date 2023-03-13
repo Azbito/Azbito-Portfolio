@@ -8,20 +8,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 199vw;
+  max-height: 100vh;
 
   .banner {
     background-image: banner.$image;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
-    width: 100vw;
+    width: 100%;
     height: banner.$height;
   }
 
   .welcome {
     font-weight: fontsWeights.$title;
     font-size: 3rem;
-    margin: 15rem 40rem 0 0;
+    margin: 15rem 0 0 4rem;
   }
 
   button {
@@ -33,7 +35,7 @@
     padding: 1rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    margin: 4rem 60rem 0 0;
+    margin: 4rem 0 0 0;
     backdrop-filter: blur(1rem);
     box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.5);
     cursor: pointer;
@@ -45,31 +47,14 @@
   }
 }
 
-@media (max-width: 856px) {
-  .content {
-    .banner {
-    }
-    .welcome {
-    }
-
-    button {
-      margin: 2rem 0 0 -2rem;
-    }
-
-    button:active {
-      background-color: button.$active;
-    }
-  }
-}
-
 .container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
-.azbito {
+.summary {
   text-align: start;
   background-color: rgb(92, 66, 163);
   padding: 2rem;
@@ -97,4 +82,38 @@
   justify-content: center;
   gap: 2rem;
   margin-bottom: 6rem;
+}
+
+@media (max-width: 856px) {
+  .content {
+    flex-direction: column;
+    .banner {
+      background-size: cover;
+      background-position: center center;
+    }
+    .welcome {
+      text-align: center;
+      width: 100vw;
+      margin: 15rem 0 0 0;
+      font-size: 2rem;
+    }
+
+    button {
+      margin: 3rem 0 0 0;
+      width: 60%;
+    }
+
+    button:active {
+      background-color: button.$active;
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    margin-top: 0;
+
+    .picture {
+      margin: 5rem 0 10rem 0;
+    }
+  }
 }
