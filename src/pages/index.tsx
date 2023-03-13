@@ -6,7 +6,6 @@ import Card from '@/components/Card';
 import Divider from '@/components/Divider';
 
 export default function Home() {
-  <title>Azbito</title>
 
   const router = useRouter()
 
