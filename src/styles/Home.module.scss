@@ -47,6 +47,8 @@
 
 @media (max-width: 856px) {
   .content {
+    .banner {
+    }
     .welcome {
     }
 
@@ -60,39 +62,39 @@
   }
 }
 
-// .container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-around;
-//   margin-top: 5rem;
-// }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
 
-// .azbito {
-//   text-align: start;
-//   background-color: rgb(92, 66, 163);
-//   padding: 2rem;
-//   border-radius: 0.5rem;
+.azbito {
+  text-align: start;
+  background-color: rgb(92, 66, 163);
+  padding: 2rem;
+  border-radius: 0.5rem;
 
-//   .title {
-//     margin-bottom: 0.5rem;
-//     font-size: 3rem;
-//   }
+  .title {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+  }
 
-//   .description {
-//     font-size: 1.2rem;
-//     width: 40rem;
-//   }
-// }
+  .description {
+    font-size: 1.2rem;
+    width: 40rem;
+  }
+}
 
-// .picture {
-//   height: auto;
-//   width: 14rem;
-//   border-radius: 20rem;
-// }
+.picture {
+  height: auto;
+  width: 14rem;
+  border-radius: 20rem;
+}
 
-// .cards {
-//   display: flex;
-//   justify-content: center;
-//   gap: 2rem;
-//   margin-bottom: 6rem;
-// }
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
