@@ -31,14 +31,13 @@ export default function Repositories({ data }: RepositoriesProps) {
 
 export async function getServerSideProps() {
   try {
-    const { data } = await axios.get('http://localhost:3000/api/repositories')
+    const { data } = await axios.get('https://azbito.vercel.app/api/repositories')
     return {
       props: {
         data
       }
     }
   } catch (error) {
-    console.log(error)
     return {
       props: {
         data: null
