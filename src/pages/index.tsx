@@ -23,7 +23,8 @@ export default function Home() {
       </div>
       <div className={styles.container}>
         <Image className={styles.picture} src="/images/photo.jpg" alt="Me" width={500} height={500} />
-        {/* <h1>Summary</h1>
+        {/* <h1 className={styles.title}>Summary</h1>
+
         <p>Ahoy! My name is Thiago and also my nickname is Azbito. I'm a Brazilian front-end developer and pixelartist. I'm always looking forward to improvement.</p> */}
         <div className={styles.summary}>
           <h1 className={styles.title}>Summary</h1>
