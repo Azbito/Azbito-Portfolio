@@ -1,5 +1,7 @@
 # About
 This is my portfolio to detail my skills in the development brench and the pixelart one.
+<br />
+<strong>NOTE: MOBILE UI IS NOT DONE YET. PLEASE, STAND-BY</strong>
 
 # Screenshots
 
