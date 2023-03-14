@@ -12,6 +12,13 @@ const tiles = [
     alt: 'night',
     width: 150,
     height: 300
+  },
+  {
+    id: 3,
+    image: 'images/ground.png',
+    alt: 'overworld',
+    width: 300,
+    height: 300
   }
 ]
 

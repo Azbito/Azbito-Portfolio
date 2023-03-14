@@ -5,11 +5,14 @@
   height: 3rem;
   display: flex;
   justify-content: space-between;
-
+  backdrop-filter: blur(1rem);
   align-items: center;
   position: fixed;
-  z-index: 1;
-  transition: 0.2s;
+  z-index: 2;
+}
+
+.button {
+  display: none;
 }
 
 .blur {
@@ -54,11 +57,55 @@
   color: navbarColors.$title;
   transition: 0.2s;
   font-size: 1.1rem;
+
   &:hover {
     color: navbarColors.$hover;
   }
 
   &:active {
     color: navbarColors.$active;
+  }
+}
+
+@media screen and (max-width: 856px) {
+  .button {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+  }
+
+  .items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+
+    max-width: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+      180deg,
+      rgb(97, 63, 247),
+      rgb(71, 69, 194),
+      rgb(73, 14, 141)
+    );
+
+    svg {
+      position: absolute;
+      top: 1rem;
+      right: 3rem;
+      cursor: pointer;
+    }
+
+    .pages {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: white;
+    }
   }
 }

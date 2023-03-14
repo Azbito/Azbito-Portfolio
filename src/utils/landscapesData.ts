@@ -1,7 +1,7 @@
 const landscapes = [
   {
     id: 1,
-    image: 'images/map.png',
+    image: 'images/map1.png',
     alt: 'Ly',
     width: 250,
     height: 250

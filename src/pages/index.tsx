@@ -10,22 +10,17 @@ export default function Home() {
   const router = useRouter()
 
   return (
-    <div>
+    <div className={styles.site}>
       <div className={styles.content}>
         <div className={styles.banner}>
-          <div className={styles.welcome}>
-            <Grow in={true}>
-              <p>Welcome to my portfolio!</p>
-            </Grow>
-            <button onClick={() => router.push('/bio')}>GO TO MY BIOGRAPHY</button>
-          </div>
+          <Grow in={true}>
+            <p className={styles.welcome}>Welcome to my portfolio!</p>
+          </Grow>
+          <button onClick={() => router.push('/bio')}>GO TO MY BIOGRAPHY</button>
         </div>
       </div>
       <div className={styles.container}>
         <Image className={styles.picture} src="/images/photo.jpg" alt="Me" width={500} height={500} />
-        {/* <h1 className={styles.title}>Summary</h1>
-
-        <p>Ahoy! My name is Thiago and also my nickname is Azbito. I'm a Brazilian front-end developer and pixelartist. I'm always looking forward to improvement.</p> */}
         <div className={styles.summary}>
           <h1 className={styles.title}>Summary</h1>
           <p className={styles.description}>Ahoy! My name is Thiago and also my nickname is Azbito. I'm a Brazilian front-end developer and pixelartist. I'm always looking forward to improvement.</p>

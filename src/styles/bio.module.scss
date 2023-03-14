@@ -50,3 +50,18 @@
     margin-top: 1rem;
   }
 }
+
+@media (max-width: 856px) {
+  .content {
+    .description {
+      width: 60%;
+      font-size: 1.2rem;
+    }
+
+    .skills {
+      width: 70%;
+      padding: 2rem 1.5rem 2rem 0;
+      grid-template-columns: 1rem 1rem 1rem;
+    }
+  }
+}

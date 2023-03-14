@@ -75,3 +75,32 @@
     border-radius: 0.3rem;
   }
 }
+
+@media (max-width: '856px') {
+  .landscapes {
+    flex-direction: column;
+  }
+
+  .sprites {
+    grid-template-columns: 1rem 1rem;
+    gap: 10rem;
+    margin-left: -10rem;
+    .frames {
+      img {
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .tiles {
+    flex-direction: column;
+    .frames {
+      display: flex;
+      background-color: rgb(207, 207, 207);
+      padding: 0.3rem;
+      border-radius: 0.3rem;
+    }
+  }
+}
