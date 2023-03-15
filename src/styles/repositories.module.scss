@@ -52,3 +52,23 @@
     text-align: center;
   }
 }
+
+@media (max-width: '856px') {
+  .repositories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .thumbnails {
+    img {
+      max-width: 20rem;
+
+      &:hover {
+        transform: scale(1);
+        box-shadow: 0;
+      }
+    }
+  }
+}

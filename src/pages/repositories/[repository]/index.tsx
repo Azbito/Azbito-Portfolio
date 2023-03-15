@@ -6,6 +6,7 @@ import { NextApiRequest } from 'next';
 import axios from 'axios';
 import { RepositoryProps } from '@/@types/repositoryProps';
 import repositoriesData from '@/utils/repositoriesData';
+import Image from 'next/image';
 
 interface RepoProps {
   data: RepositoryProps
@@ -28,18 +29,27 @@ export default function Repository({ data }: RepoProps) {
       </div>
 
       <p className={styles.screenshotstitle}>Screenshots</p>
+      <center>
 
-      <div className={repository == 'find_me_mobile' ? styles.carouselFindMeMobile : styles.carousel} >
-        <Carousel autoPlay interval={2000} axis="horizontal" >
-          {data.infos?.screenshots?.map((item) => (
-            <div key={item?.id}>
-              <img className={styles.image} src={item.image} alt={item?.alt} />
-            </div>
-          ))}
-        </Carousel>
-      </div>
+        <div className={repository == 'find_me_mobile' ? styles.carouselFindMeMobile : styles.carousel} >
+          <Carousel autoPlay interval={2000} axis="horizontal" showIndicators={false} showArrows={true} stopOnHover >
+            {data.infos?.screenshots?.map((item) => (
+              <div key={item?.id}>
+                <Image src={item.image} alt={item?.alt} layout="responsive" width={1280} height={720} />
 
-    </div>
+              </div>
+            ))}
+          </Carousel>
+
+          <div className={styles.repositoryButton} onClick={() => router.push(`${data.repositoryLink}`)}>
+            <Image src="/images/github.png" alt="Repository link" width={50} height={50} />
+            <p>Go to repository</p>
+          </div>
+
+        </div>
+      </center>
+
+    </div >
   )
 }
 

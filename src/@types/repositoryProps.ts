@@ -18,4 +18,5 @@ export interface RepositoryProps {
   alt: string
   path: string
   infos?: InfosProps
+  repositoryLink: string
 }

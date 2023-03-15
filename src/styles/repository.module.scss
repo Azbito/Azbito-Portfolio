@@ -31,6 +31,7 @@
     }
   }
 }
+
 .screenshotstitle {
   font-weight: fontsWeights.$thindescription;
   font-size: 2rem;
@@ -38,9 +39,51 @@
 }
 
 .carousel {
-  max-width: 50rem;
+  max-width: 70%;
+  align-items: center;
+  justify-content: center;
 }
 
 .carouselFindMeMobile {
-  max-width: 20rem;
+  max-width: 100%;
+}
+
+.repositoryButton {
+  display: flex;
+  background-color: rgb(35, 103, 180);
+  padding: 1rem;
+  width: 15rem;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0 10px rgb(25, 75, 133);
+  margin-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  &:hover {
+    background-color: rgb(24, 86, 156);
+  }
+
+  &:active {
+    background-color: rgb(13, 54, 100);
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 856px) {
+  .content {
+    p {
+      max-width: 20rem;
+    }
+  }
+
+  .carousel {
+    max-width: 45rem;
+  }
+  .carouselFindMeMobile {
+    width: 17rem;
+  }
 }

@@ -7,6 +7,7 @@ const repositoriesData: RepositoryProps[] = [
     image: 'images/lh1.png',
     alt: 'League Habilities',
     path: 'league_habilities',
+    repositoryLink: 'https://github.com/Azbito/League-Habilities',
     infos: {
       description:
         "This is my first repository when I was a newbie at front-end developing. Thanks to my brother Marcos Roque and Rocketseat. I'm inspired to be better as soon as possible at front-end development branch and, also, game development!",
@@ -62,6 +63,7 @@ const repositoriesData: RepositoryProps[] = [
     image: 'images/b1.png',
     alt: 'backtrack',
     path: 'backtrack',
+    repositoryLink: 'https://github.com/Azbito/-backtrack',
     infos: {
       description:
         '-BackTrack is a repository made in ReactJS which I decided to make a sign-in and sign-up pages.',
@@ -86,6 +88,7 @@ const repositoriesData: RepositoryProps[] = [
     image: 'images/dt1.png',
     alt: 'DT Money',
     path: 'dt_money',
+    repositoryLink: 'https://github.com/Azbito/dt-money',
     infos: {
       description:
         'DT Money is a website with Rocketseat classes to learn how to make a list.',
@@ -125,6 +128,7 @@ const repositoriesData: RepositoryProps[] = [
     image: 'images/ch1.png',
     alt: 'Clima Hoje',
     path: 'clima_hoje',
+    repositoryLink: 'https://github.com/Azbito/ClimaHoje',
     infos: {
       description: 'Clima Hoje is a API REST study',
       screenshotsTitle: 'Screenshots',
@@ -148,6 +152,7 @@ const repositoriesData: RepositoryProps[] = [
     image: 'images/fm1.png',
     alt: 'Find Me',
     path: 'find_me',
+    repositoryLink: 'https://github.com/Azbito/FindMe',
     infos: {
       description: 'Clima Hoje is an API REST study',
       screenshotsTitle: 'Screenshots',
@@ -167,10 +172,11 @@ const repositoriesData: RepositoryProps[] = [
   },
   {
     id: 6,
-    title: 'League Abilities',
+    title: 'League Habilities 2',
     image: 'images/la1.png',
-    alt: 'League Abilities',
-    path: 'league_abilities',
+    alt: 'League Habilities',
+    path: 'league_habilities_2',
+    repositoryLink: 'https://github.com/Azbito/League-Habilities-v2',
     infos: {
       description:
         "It's a remasterization of my first website called League Habilities.",
@@ -310,6 +316,7 @@ const repositoriesData: RepositoryProps[] = [
     image: 'images/td1.png',
     alt: 'To Do',
     path: 'to_do',
+    repositoryLink: 'https://github.com/Azbito/To-Do',
     infos: {
       description: "It's a list to practice front-end skills.",
       screenshotsTitle: 'Screenshots',
@@ -338,6 +345,7 @@ const repositoriesData: RepositoryProps[] = [
     image: 'images/fmm4.png',
     alt: 'Find Me Mobile',
     path: 'find_me_mobile',
+    repositoryLink: 'https://github.com/Azbito/FindMeMobile',
     infos: {
       description:
         'Then I tried to code my first app based on an existent repository created by me called Find Me',
@@ -367,6 +375,7 @@ const repositoriesData: RepositoryProps[] = [
     image: 'images/atd1.png',
     alt: "Atelier de L'Univers",
     path: 'atelier_de_l_univers',
+    repositoryLink: 'https://github.com/Azbito/Atelier-De-L-Univers',
     infos: {
       description: 'This is a website with an artistic characteristic.',
       screenshotsTitle: 'Screenshots',
