@@ -20,7 +20,7 @@
   margin-top: 2rem;
   margin-bottom: 5rem;
   gap: 2rem;
-  padding: 5rem;
+  padding: 4rem;
   background-color: rgb(54, 31, 112);
   text-align: center;
   box-shadow: 0 20px rgb(37, 25, 66);
@@ -105,5 +105,11 @@
       margin-top: 0.1rem;
       font-weight: fontsWeights.$thindescription;
     }
+  }
+}
+
+@media (max-width: '856px') {
+  .socialmedias {
+    width: 40%;
   }
 }
