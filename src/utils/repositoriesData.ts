@@ -417,46 +417,46 @@ const repositoriesData: RepositoryProps[] = [
         }
       ]
     }
-  },
-  {
-    id: 10,
-    title: 'Minuit',
-    image: 'images/m1.png',
-    alt: 'Minuit',
-    path: 'minuit',
-    repositoryLink: 'https://github.com/Azbito/Minuit',
-    infos: {
-      description: 'This is an API Rest practice!',
-      screenshotsTitle: 'Screenshots',
-      screenshots: [
-        {
-          id: 1,
-          image: '/images/m1.png',
-          alt: 'screenshot'
-        },
-        {
-          id: 2,
-          image: '/images/m2.png',
-          alt: 'screenshot'
-        },
-        {
-          id: 3,
-          image: '/images/m3.png',
-          alt: 'screenshot'
-        },
-        {
-          id: 4,
-          image: '/images/m4.png',
-          alt: 'screenshot'
-        },
-        {
-          id: 5,
-          image: '/images/m5.png',
-          alt: 'screenshot'
-        }
-      ]
-    }
   }
+  // {
+  //   id: 10,
+  //   title: 'Minuit',
+  //   image: 'images/m1.png',
+  //   alt: 'Minuit',
+  //   path: 'minuit',
+  //   repositoryLink: 'https://github.com/Azbito/Minuit',
+  //   infos: {
+  //     description: 'This is an API Rest practice!',
+  //     screenshotsTitle: 'Screenshots',
+  //     screenshots: [
+  //       {
+  //         id: 1,
+  //         image: '/images/m1.png',
+  //         alt: 'screenshot'
+  //       },
+  //       {
+  //         id: 2,
+  //         image: '/images/m2.png',
+  //         alt: 'screenshot'
+  //       },
+  //       {
+  //         id: 3,
+  //         image: '/images/m3.png',
+  //         alt: 'screenshot'
+  //       },
+  //       {
+  //         id: 4,
+  //         image: '/images/m4.png',
+  //         alt: 'screenshot'
+  //       },
+  //       {
+  //         id: 5,
+  //         image: '/images/m5.png',
+  //         alt: 'screenshot'
+  //       }
+  //     ]
+  //   }
+  // }
 ]
 
 export default repositoriesData
