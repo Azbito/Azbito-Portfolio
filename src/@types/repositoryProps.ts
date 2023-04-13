@@ -7,8 +7,8 @@ interface screenshotsProps {
 export interface InfosProps {
   description: string
   descriptionLink?: string
-  screenshotsTitle: string
-  screenshots: screenshotsProps[]
+  screenshotsTitle?: string
+  screenshots?: screenshotsProps[]
 }
 
 export interface RepositoryProps {
@@ -19,4 +19,7 @@ export interface RepositoryProps {
   path: string
   infos?: InfosProps
   repositoryLink: string
+  repositoryOtherLink?: string
+  npmLink?: string
+  luaRocksLink?: string
 }

@@ -11,11 +11,12 @@
 .content {
   margin-top: 5rem;
   text-align: center;
-
-  p {
-    margin-top: 2rem;
-    width: 40rem;
-  }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
 
   strong {
     color: rgb(218, 96, 112);
@@ -73,6 +74,110 @@
     font-size: 1.2rem;
   }
 }
+
+.moontempoButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 2rem
+}
+
+.moontempoButton {  
+  display: flex;
+  background-color: rgb(35, 103, 180);
+  padding: 1rem;
+  width: 100%;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0 10px rgb(25, 75, 133);
+  margin-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  &:hover {
+    background-color: rgb(24, 86, 156);
+  }
+
+  &:active {
+    background-color: rgb(13, 54, 100);
+  }
+
+  p {
+    font-size: 1.2rem;
+  }}
+
+.moontempoButtonDiv {
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.moontempoButtonTitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.moontempoNpmButton {
+  background-color: rgb(180, 45, 35);
+  padding: 1rem;
+  width: 100%;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0 10px rgb(121, 30, 23);
+  margin-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+
+  &:hover {
+    background-color: rgb(192, 57, 47);
+  }
+
+  &:active {
+    background-color: rgb(83, 19, 15);
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.moontempoLuaRocksButton {
+  background-color: rgb(43, 39, 95);
+  padding: 1rem;
+  width: 100%;
+  transition: 0.2s;
+  cursor: pointer;
+  box-shadow: 0 10px rgb(27, 24, 65);
+  margin-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+
+  &:hover {
+    background-color: rgb(56, 51, 116);
+  }
+
+  &:active {
+    background-color: rgb(13, 12, 31);
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.description {
+  width: 70%;
+}
+
 @media (max-width: 856px) {
   .content {
     p {
@@ -85,5 +190,14 @@
   }
   .carouselFindMeMobile {
     width: 17rem;
+  }
+  .moontempoButtons {
+    flex-direction: column;
+  }
+  .moontempoButtonDiv {
+    width: 90%;
+  }
+  .moontempoButtons {
+    gap: 0;
   }
 }

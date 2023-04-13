@@ -21,32 +21,66 @@ export default function Repository({ data }: RepoProps) {
       <div className={styles.content}>
         <h1>{data.title}</h1>
         {repository == "league_habilities" ?
-          <p>{data.infos?.description.substring(0, 94)} <strong onClick={() => router.push(`${data.infos?.descriptionLink}`)}>{data.infos?.description.substring(94, 106)}</strong>{data.infos?.description.substring(106, data.infos?.description.length)}</p>
+          <p className={styles.description}>{data.infos?.description.substring(0, 94)} <strong onClick={() => router.push(`${data.infos?.descriptionLink}`)}>{data.infos?.description.substring(94, 106)}</strong>{data.infos?.description.substring(106, data.infos?.description.length)}</p>
           :
-          <p>{data.infos?.description}</p>
+          <p className={styles.description}>{data.infos?.description}</p>
         }
 
       </div>
 
-      <p className={styles.screenshotstitle}>Screenshots</p>
+      {repository != "moontempo" ?
+        <p className={styles.screenshotstitle}>Screenshots</p>
+        :
+        <></>
+      }
+
       <center>
 
         <div className={repository == 'find_me_mobile' ? styles.carouselFindMeMobile : styles.carousel} >
           <Carousel autoPlay interval={2000} axis="horizontal" showIndicators={false} showArrows={true} stopOnHover >
             {data.infos?.screenshots?.map((item) => (
               <div key={item?.id}>
-                <Image src={item.image} alt={item?.alt} layout="responsive" width={1280} height={720} />
+                <Image src={item?.image} alt={item?.alt} layout="responsive" width={1280} height={720} />
 
               </div>
             ))}
           </Carousel>
 
-          <div className={styles.repositoryButton} onClick={() => router.push(`${data.repositoryLink}`)}>
-            <Image src="/images/github.png" alt="Repository link" width={50} height={50} />
-            <p>Go to repository</p>
-          </div>
+          {
+            repository == "moontempo" ?
+              <div className={styles.moontempoButtons}>
+                <div className={styles.moontempoButtonDiv}>
+                  <p className={styles.moontempoButtonTitle}>Javascript Library</p>
+                  <div className={styles.moontempoButton} onClick={() => router.push(`${data.repositoryLink}`)}>
+                    <Image src="/images/github.png" alt="Repository link" width={50} height={50} />
+                    <p>Go to repository</p>
+                  </div>
+                  <div className={styles.moontempoNpmButton} onClick={() => router.push(`${data.npmLink}`)}>
+                    <Image src="/images/npm.png" alt="Npm link" width={50} height={50} />
+                    <p>Go to repository</p>
+                  </div>
+                </div>
+                <div className={styles.moontempoButtonDiv}>
+                  <p className={styles.moontempoButtonTitle}>Lua Library</p>
+                  <div className={styles.moontempoButton} onClick={() => router.push(`${data.repositoryOtherLink}`)}>
+                    <Image src="/images/github.png" alt="Repository link" width={50} height={50} />
+                    <p>Go to repository</p>
+                  </div>
+                  <div className={styles.moontempoLuaRocksButton} onClick={() => router.push(`${data.luaRocksLink}`)}>
+                    <Image src="/images/luarocks.png" alt="Package link" width={50} height={50} />
+                    <p>Go to repository</p>
+                  </div>
+                </div>
+              </div>
 
+              :
+              <div className={styles.repositoryButton} onClick={() => router.push(`${data.repositoryLink}`)}>
+                <Image src="/images/github.png" alt="Repository link" width={50} height={50} />
+                <p>Go to repository</p>
+              </div>
+          }
         </div>
+
       </center>
 
     </div >
