@@ -20,8 +20,9 @@
 }
 
 .repositories {
+  margin-top: 4rem;
   display: grid;
-  grid-template-columns: 25rem 25rem 25rem;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -36,6 +37,7 @@
   margin-bottom: 5rem;
   img {
     max-width: 25rem;
+    height: 10rem;
     transition: 0.2s;
     cursor: pointer;
 

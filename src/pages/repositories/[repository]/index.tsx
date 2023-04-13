@@ -3,7 +3,6 @@ import styles from '../../../styles/repository.module.scss'
 import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { NextApiRequest } from 'next';
-import axios from 'axios';
 import { RepositoryProps } from '@/@types/repositoryProps';
 import repositoriesData from '@/utils/repositoriesData';
 import Image from 'next/image';
@@ -68,7 +67,7 @@ export default function Repository({ data }: RepoProps) {
                   </div>
                   <div className={styles.moontempoLuaRocksButton} onClick={() => router.push(`${data.luaRocksLink}`)}>
                     <Image src="/images/luarocks.png" alt="Package link" width={50} height={50} />
-                    <p>Go to repository</p>
+                    <p>Go to package</p>
                   </div>
                 </div>
               </div>
