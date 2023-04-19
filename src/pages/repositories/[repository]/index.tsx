@@ -71,7 +71,6 @@ export default function Repository({ data }: RepoProps) {
                   </div>
                 </div>
               </div>
-
               :
               <div className={styles.repositoryButton} onClick={() => router.push(`${data.repositoryLink}`)}>
                 <Image src="/images/github.png" alt="Repository link" width={50} height={50} />

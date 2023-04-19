@@ -1,0 +1,120 @@
+.container {
+  background-color: rgb(54, 31, 112);
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputbox{
+  position: relative;
+  display: flex;
+
+  width: 100%;
+ }
+
+ .inputbox input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid rgb(148, 144, 144);
+  background-color: #5734b4;
+
+  font-weight: 70;
+
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+
+  transition: 0.5s;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1rem;
+  color: grey;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+  color: #d0c3f5;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65rem;
+  padding: 0 10px;
+  background:#5734b4;
+  border-left: 1px solid #21b6ae;
+  border-right: 1px solid #21b6ae;
+  letter-spacing: 0.2rem;
+}
+
+.inputbox input:valid,
+.inputbox input:focus {
+  border: 1px solid #21b6ae;
+}
+
+.textareabox textarea:valid ~ span,
+.textareabox textarea:focus ~ span {
+  color: #d0c3f5;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65rem;
+  padding: 0 10px;
+  background:#5734b4;
+  border-left: 1px solid #21b6ae;
+  border-right: 1px solid #21b6ae;
+  letter-spacing: 0.2rem;
+}
+
+.textareabox textarea:valid,
+.textareabox textarea:focus {
+  border: 1px solid #21b6ae;
+}
+
+.textareabox {
+  width: 1rem;
+  position: relative;
+
+  textarea {
+    border: 1px solid #21b6ae;
+    outline: none;
+    background-color: #5734b4;
+    color: white;
+    resize: none;
+  }
+
+  span {
+    border-left: 1px solid #21b6ae;
+    border-right: 1px solid #21b6ae;
+    position: absolute;
+    left: .5rem;
+    top: -1rem;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1rem;
+    color: grey;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+}
+
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-weight: 200;
+}
