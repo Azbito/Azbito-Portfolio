@@ -23,7 +23,7 @@ export default function SendEmailForm() {
     <div className={styles.container}>
       <div className={styles.content}>
         <h1 className={styles.title}>Send me an email</h1>
-        <form onSubmit={sendEmail} style={{ display: "flex", flexDirection: "column", gap: 32, width: "50% " }}>
+        <form onSubmit={sendEmail} className={styles.form}>
           <div className={styles.inputbox}>
             <input name="name" />
             <span>Name</span>
@@ -36,8 +36,7 @@ export default function SendEmailForm() {
             <span>Message</span>
             <textarea name="message" />
           </div>
-
-          <button type="submit" value="Send Message">Enviar</button>
+          <button type="submit" value="Send Message">Send</button>
         </form>
       </div>
     </div>
