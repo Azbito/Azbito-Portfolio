@@ -8,6 +8,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 
 .inputbox{
@@ -32,6 +33,7 @@
   font-size: 1rem;
 
   transition: 0.5s;
+  font-family: "Poppins", sans-serif;
 }
 
 .inputbox span {
@@ -91,18 +93,21 @@
     resize: none;
     width: 100%;
     height: 10rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
   }
 
   span {
     position: absolute;
     color: #d0c3f5;
-    transform: translateX(10px) translateY(-7px);
+    transform: translateX(10px) translateY(-10px);
     font-size: 0.65rem;
     padding: 0 10px;
     background:#5734b4;
     border-left: 1px solid #21b6ae;
     border-right: 1px solid #21b6ae;
     letter-spacing: 0.2rem;
+    text-transform: uppercase;
   }
 }
 
@@ -115,6 +120,7 @@
   flex-direction: column;
   gap: 2rem;
 }
+
 .form {
   width: 70%;
   display: flex;
@@ -134,7 +140,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    transition: .2s;
+    cursor: pointer;
+    
     &:hover {
       background-color: #2aaa8e;
     }

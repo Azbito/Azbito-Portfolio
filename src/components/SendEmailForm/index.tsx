@@ -1,44 +1,55 @@
-import { Box, InputLabel, TextField } from '@mui/material';
 import styles from './sendemailform.module.scss'
 import emailjs from 'emailjs-com'
-import FormControl from '@mui/material/FormControl';
-import OutlinedInput from '@mui/material/OutlinedInput';
+import { useState } from 'react';
+import Loader from '../Loader';
+import isValidEmail from '@/utils/isValidEmail';
 
 export default function SendEmailForm() {
+  const [isLoading, setIsLoading] = useState(false)
 
   function sendEmail(e: any) {
-    e.preventDefault();
-
-    emailjs.sendForm('service_2e2ny8l', 'template_hh5limr', e.target, 'UO8RAbjDr7wffFbuB')
-      .then((result) => {
-        alert(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-    e.target.reset()
+    const email = e.target.email.value;
+    if (isValidEmail(email)) {
+      setIsLoading(true)
+      e.preventDefault();
+      emailjs.sendForm('service_2e2ny8l', 'template_hh5limr', e.target, `${process.env.NEXT_PUBLIC_API_KEY}`
+      )
+        .then((result) => {
+          alert(result.text);
+          setIsLoading(false)
+        }, (error) => {
+          alert(error.text);
+          setIsLoading(false)
+        });
+      e.target.reset()
+      return
+    }
+    alert("Please, type a valid email.")
   }
 
-
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <h1 className={styles.title}>Send me an email</h1>
-        <form onSubmit={sendEmail} className={styles.form}>
-          <div className={styles.inputbox}>
-            <input name="name" />
-            <span>Name</span>
-          </div>
-          <div className={styles.inputbox}>
-            <input name="email" />
-            <span>Email</span>
-          </div>
-          <div className={styles.textareabox}>
-            <span>Message</span>
-            <textarea name="message" />
-          </div>
-          <button type="submit" value="Send Message">Send</button>
-        </form>
+    <>
+      {isLoading && <Loader />}
+      <div className={styles.container}>
+        <div className={styles.content}>
+          <h1 className={styles.title}>Send me an email</h1>
+          <form onSubmit={sendEmail} className={styles.form}>
+            <div className={styles.inputbox}>
+              <input name="name" />
+              <span>Name</span>
+            </div>
+            <div className={styles.inputbox}>
+              <input name="email" onBlur={() => isValidEmail} />
+              <span>Email</span>
+            </div>
+            <div className={styles.textareabox}>
+              <span>Message</span>
+              <textarea name="message" />
+            </div>
+            <button type="submit" value="Send Message">Send</button>
+          </form>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
