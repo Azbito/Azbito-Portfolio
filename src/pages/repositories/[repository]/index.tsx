@@ -26,15 +26,12 @@ export default function Repository({ data }: RepoProps) {
         }
 
       </div>
-
       {repository != "moontempo" ?
         <p className={styles.screenshotstitle}>Screenshots</p>
         :
         <></>
       }
-
       <center>
-
         <div className={repository == 'find_me_mobile' ? styles.carouselFindMeMobile : styles.carousel} >
           <Carousel autoPlay interval={2000} axis="horizontal" showIndicators={false} showArrows={true} stopOnHover >
             {data.infos?.screenshots?.map((item) => (
@@ -56,7 +53,7 @@ export default function Repository({ data }: RepoProps) {
                   </div>
                   <div className={styles.moontempoNpmButton} onClick={() => router.push(`${data.npmLink}`)}>
                     <Image src="/images/npm.png" alt="Npm link" width={50} height={50} />
-                    <p>Go to repository</p>
+                    <p>Go to library</p>
                   </div>
                 </div>
                 <div className={styles.moontempoButtonDiv}>
@@ -78,9 +75,7 @@ export default function Repository({ data }: RepoProps) {
               </div>
           }
         </div>
-
       </center>
-
     </div >
   )
 }
