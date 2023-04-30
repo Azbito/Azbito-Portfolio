@@ -686,8 +686,7 @@ const repositoriesData: RepositoryProps[] = [
           alt: 'screenshot'
         }
       ],
-      description:
-        'This is my first library ever made and, also, my first library translation from Javascript to Lua. The documentation is available in English, Brazilian Portuguese and French.'
+      description: 'This repository was created for learning Redux.'
     }
   }
 ]
