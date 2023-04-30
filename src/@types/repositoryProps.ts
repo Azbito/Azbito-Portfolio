@@ -7,7 +7,6 @@ interface screenshotsProps {
 export interface InfosProps {
   description: string
   descriptionLink?: string
-  screenshotsTitle?: string
   screenshots?: screenshotsProps[]
 }
 

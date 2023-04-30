@@ -12,7 +12,6 @@ const repositoriesData: RepositoryProps[] = [
       description:
         "This is my first repository when I was a newbie at front-end developing. Thanks to my brother Marcos Roque and Rocketseat. I'm inspired to be better as soon as possible at front-end development branch and, also, game development!",
       descriptionLink: 'https://www.github.com/marcosdanielr',
-      screenshotsTitle: 'Screenshots',
       screenshots: [
         {
           id: 1,
@@ -67,7 +66,6 @@ const repositoriesData: RepositoryProps[] = [
     infos: {
       description:
         '-BackTrack is a repository made in ReactJS which I decided to make a sign-in and sign-up pages.',
-      screenshotsTitle: 'Screenshots',
       screenshots: [
         {
           id: 1,
@@ -92,7 +90,6 @@ const repositoriesData: RepositoryProps[] = [
     infos: {
       description:
         'DT Money is a website with Rocketseat classes to learn how to make a list.',
-      screenshotsTitle: 'Screenshots',
       screenshots: [
         {
           id: 1,
@@ -131,7 +128,6 @@ const repositoriesData: RepositoryProps[] = [
     repositoryLink: 'https://github.com/Azbito/ClimaHoje',
     infos: {
       description: 'Clima Hoje is a API REST study',
-      screenshotsTitle: 'Screenshots',
       screenshots: [
         {
           id: 1,
@@ -155,7 +151,6 @@ const repositoriesData: RepositoryProps[] = [
     repositoryLink: 'https://github.com/Azbito/FindMe',
     infos: {
       description: 'Clima Hoje is an API REST study',
-      screenshotsTitle: 'Screenshots',
       screenshots: [
         {
           id: 1,
@@ -180,7 +175,6 @@ const repositoriesData: RepositoryProps[] = [
     infos: {
       description:
         "It's a remasterization of my first website called League Habilities.",
-      screenshotsTitle: 'Screenshots',
       screenshots: [
         {
           id: 1,
@@ -319,7 +313,6 @@ const repositoriesData: RepositoryProps[] = [
     repositoryLink: 'https://github.com/Azbito/To-Do',
     infos: {
       description: "It's a list to practice front-end skills.",
-      screenshotsTitle: 'Screenshots',
       screenshots: [
         {
           id: 1,
@@ -349,7 +342,6 @@ const repositoriesData: RepositoryProps[] = [
     infos: {
       description:
         'Then I tried to code my first app based on an existent repository created by me called Find Me',
-      screenshotsTitle: 'Screenshots',
       screenshots: [
         {
           id: 1,
@@ -378,7 +370,6 @@ const repositoriesData: RepositoryProps[] = [
     repositoryLink: 'https://github.com/Azbito/Atelier-De-L-Univers',
     infos: {
       description: 'This is a website with an artistic characteristic.',
-      screenshotsTitle: 'Screenshots',
       screenshots: [
         {
           id: 1,
@@ -427,7 +418,6 @@ const repositoriesData: RepositoryProps[] = [
     repositoryLink: 'https://github.com/Azbito/Starship',
     infos: {
       description: 'This is an API Rest practice!',
-      screenshotsTitle: 'Screenshots',
       screenshots: [
         {
           id: 1,
@@ -573,6 +563,129 @@ const repositoriesData: RepositoryProps[] = [
     npmLink: 'https://www.npmjs.com/package/moontempo',
     luaRocksLink: 'https://luarocks.org/modules/azbito/moontempo',
     infos: {
+      description:
+        'This is my first library ever made and, also, my first library translation from Javascript to Lua. The documentation is available in English, Brazilian Portuguese and French.'
+    }
+  },
+  {
+    id: 11,
+    title: 'Artverse',
+    image: 'images/art1.png',
+    alt: 'Artverse',
+    path: 'artverse',
+    repositoryLink: 'https://github.com/Azbito/Artverse',
+    infos: {
+      screenshots: [
+        {
+          id: 1,
+          image: '/images/art1.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 2,
+          image: '/images/art2.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 3,
+          image: '/images/art3.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 4,
+          image: '/images/art4.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 5,
+          image: '/images/art5.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 6,
+          image: '/images/art6.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 7,
+          image: '/images/art7.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 8,
+          image: '/images/art8.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 9,
+          image: '/images/art9.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 10,
+          image: '/images/art10.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 11,
+          image: '/images/art11.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 12,
+          image: '/images/art12.png',
+          alt: 'screenshot'
+        }
+      ],
+      description:
+        'This repository was created to learn local storage and practice Tailwind CSS.'
+    }
+  },
+  {
+    id: 12,
+    title: 'Learning Redux',
+    image: 'images/redux1.png',
+    alt: 'Learning Redux',
+    path: 'learning-redux',
+    repositoryLink: 'https://github.com/Azbito/Learning-Redux',
+    infos: {
+      screenshots: [
+        {
+          id: 1,
+          image: '/images/redux1.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 2,
+          image: '/images/redux2.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 3,
+          image: '/images/redux3.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 4,
+          image: '/images/redux4.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 5,
+          image: '/images/redux5.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 6,
+          image: '/images/redux6.png',
+          alt: 'screenshot'
+        },
+        {
+          id: 7,
+          image: '/images/redux7.png',
+          alt: 'screenshot'
+        }
+      ],
       description:
         'This is my first library ever made and, also, my first library translation from Javascript to Lua. The documentation is available in English, Brazilian Portuguese and French.'
     }

@@ -11,13 +11,13 @@ export default function Repositories() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h1>Repositories</h1>
+        <b>Repositories</b>
         <AmountRepositories />
         <div className={styles.repositories}>
           {repositoriesData.map((item: RepositoryProps) => (
             <div className={styles.thumbnails}>
               <img onClick={() => router.push(`repositories/${item.path}`)} src={item?.image} alt={item?.alt} />
-              <strong>{item?.title}</strong>
+              <p>{item?.title}</p>
             </div>
           ))
           }

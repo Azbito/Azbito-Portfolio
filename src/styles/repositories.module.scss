@@ -13,8 +13,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  h1 {
-    font-weight: fontsWeights.$thindescription;
+  b {
+    font-size: 2rem;
+    font-weight: fontsWeights.$title;
     margin-bottom: 3rem;
   }
 }
@@ -48,7 +49,8 @@
     }
   }
 
-  strong {
+  p {
+    font-weight: fontsWeights.$thindescription;
     margin-top: 2rem;
     font-size: 1.5rem;
     text-align: center;
